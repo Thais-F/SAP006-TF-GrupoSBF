@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Chapéu",
+    "price": 380.58,
+    "oldPrice": 190.29,
+    "image": "http://placeimg.com/640/480/sports",
+    "rate": 0,
+    "reviews": 1525,
+    "freeShipping": true,
+    "discount": 50,
+    "id": "0b5cb0ec-eebd-47d6-a9ea-71595b1f1170",
+    "colors": 1
+  },
+  {
+    "name": "Salgadinhos",
+    "price": 1288.32,
+    "oldPrice": null,
+    "image": "http://placeimg.com/640/480/sports",
+    "rate": 3,
+    "reviews": 808,
+    "freeShipping": false,
+    "discount": null,
+    "id": "b575ed49-4faa-4219-9922-ad5f445031af",
+    "colors": 5
+  },
+  {
+    "name": "Frango Salgado",
+    "price": 745.84,
+    "oldPrice": 551.8,
+    "image": "http://placeimg.com/640/480/sports",
+    "rate": 1,
+    "reviews": 1629,
+    "freeShipping": false,
+    "discount": 73,
+    "id": "4e13dac4-b60a-47a5-a104-8dd2bd46b7fe",
+    "colors": 5
+  },
+  {
+    "name": "Tênis",
+    "image": "https://imgcentauro-a.akamaihd.net/250x250/9469584WA1/tenis-asics-gel-dedicate-6-masculino-img.jpg",
+    "price": 687.76,
+    "oldPrice": 566.83,
+    "rate": 1,
+    "reviews": 1053,
+    "freeShipping": true,
+    "discount": 82,
+    "id": "fd90bfc8-fb6c-4b76-bd37-e678cfcf5534",
+    "colors": 4
+  },
+  {
+    "name": "Camisa",
+    "image": "https://imgcentauro-a.akamaihd.net/230x230/93227802.jpg",
+    "price": 1462.97,
+    "oldPrice": 29.07,
+    "rate": 5,
+    "reviews": 709,
+    "freeShipping": false,
+    "discount": 1,
+    "id": "bf03d214-ea1d-4ff2-8fb9-4640c917ca82",
+    "colors": 3
+  },
+  {
+    "name": "Mesa",
+    "image": "https://imgcentauro-a.akamaihd.net/230x230/949578BL.jpg",
+    "price": 1583.68,
+    "oldPrice": 999.77,
+    "rate": 2,
+    "reviews": 1093,
+    "freeShipping": true,
+    "discount": 63,
+    "id": "c519fef9-d47d-475b-bd31-9f75087f184b",
+    "colors": 9
+  }
+]

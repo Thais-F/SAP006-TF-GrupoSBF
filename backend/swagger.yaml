@@ -1,0 +1,122 @@
+openapi: 3.0.1
+info:
+  title: API do Mini E-commerce
+  version: 0.0.1
+servers:
+  - url: http://localhost:3000
+paths:
+  /search:
+    get:
+      summary: Encontra produtos com o termo especificado
+      parameters:
+      - name: q
+        in: query
+        description: Termo buscado
+        required: true
+        schema:
+          type: string
+      - name: sort
+        in: query
+        description: Ordenação
+        required: true
+        schema:
+          type: string
+          enum:
+          - lowestPrice
+          - highestPrice
+          - highestDiscount
+          - relevance
+      responses:
+        200:
+          description: Produtos retornados com sucesso
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+        400:
+          description: Erro ao validar
+
+  /promotions:
+    get:
+      summary: Retorna promoções em destaque
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+
+  /cart:
+    post:
+      summary: Finaliza um pedido
+      requestBody:
+        content:
+          application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/CartItem'
+
+      responses:
+        201:
+          description: Pedido finalizado com sucesso
+        500:
+          description: Erro ao finalizar o pedido
+        400:
+          description: Erro ao validar
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: string
+          description: "Identificação do produto"
+        name:
+          type: string
+          description: "Nome do produto"
+        image:
+          type: string
+          description: "Imagem do produto"
+        colors:
+          type: string
+          description: "Quantidade de cores disponíveis"
+        price:
+          type: number
+          description: "Valor do produto"
+        oldPrice:
+          type: number
+          nullable: true
+          description: "Valor do produto"
+        discount:
+          type: integer
+          nullable: true
+          description: "Porcentagem de desconto"
+        freeShipping:
+          type: boolean
+          description: "O produto tem frete grátis?"
+        rate:
+          type: integer
+          description: "Avaliações do produto"
+        reviews:
+          type: integer
+          description: "Quantidade de reviews do produto"
+    CartItem:
+      type: object
+      properties:
+        id:
+          type: string
+          description: "Identificação do produto"
+        quantity:
+          type: integer
+          description: "Nome do produto"
+

@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "ddea2d83-e504-4838-9899-1fe80155778e",
+		"name": "Fake API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/cart",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/search?q=a&sort=lowestPrice",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "a"
+						},
+						{
+							"key": "sort",
+							"value": "lowestPrice"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Promotions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/promotions",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"promotions"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "2f6e9889-35ee-47b4-a61e-0361356c3fae",
+			"key": "BASE_URL",
+			"value": "http://localhost:3000"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
