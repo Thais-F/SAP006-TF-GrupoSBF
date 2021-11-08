@@ -26,8 +26,10 @@ header{
 .btn-nav, .btn-cart{
     border:none;
     background-color: transparent;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color:#4D4D4D;
     cursor:pointer;
-    font-size:15px;
 }
 .logo-img{
     height: 80px;
