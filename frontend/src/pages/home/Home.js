@@ -1,5 +1,6 @@
 import {React, useEffect, useState} from 'react'
 import { getPromotions } from '../../services'
+import { Footer } from '../../components/footer/Footer';
 
 //página de promoções
 
@@ -22,10 +23,17 @@ const Home = () => {
     return (
         <div>
             <h1>Home</h1>
-            <div>{promotions.map((product) => (
-                <h1>{product.name}</h1>
-            ))}</div>
+            <div>
+                {promotions.map((product) => (
+                    <p>{product.name}</p>
+                ))}
+            </div>
+            <Footer className="footer" />
         </div>
+
+        
+
+        
     )
 
     
