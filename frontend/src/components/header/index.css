@@ -3,14 +3,14 @@ header{
     width: 100%;
 }
 .principal{
-    background-color: #E30000;
-    margin:0px;
+    background-color: rgb(227,0,0);
+    margin:0px auto;
     padding: 0px 45px 0px 30px;
     display: flex;
     align-items: center;
     min-height: 80px;
     max-height: 86px;
-    /* max-width: 1400px; */
+    max-width: 1400px;
     justify-content: space-between;
 }
 .secondary{
@@ -27,9 +27,7 @@ header{
     border:none;
     background-color: transparent;
     cursor:pointer;
-    font-family: 'Roboto', sans-serif;
-    color:#4D4D4D;
-    font-size:16px;
+    font-size:15px;
 }
 .logo-img{
     height: 80px;
@@ -37,7 +35,7 @@ header{
 }
 .btn-logo{
     border:none;
-    background-color:#E30000;
+    background-color: rgb(227,0,0);
 }
 .btn-cart{
     color:#ffffff;
@@ -45,13 +43,12 @@ header{
 }
 
 #outlet{
-    color: #E30000;
+    color: red;
     font-weight: bold;
 }
 
-
-@media screen and (max-width: 768px){
+@media screen and (max-width:768px){
     .secondary{
-       display: none;
+        display:none;
     }
 }
