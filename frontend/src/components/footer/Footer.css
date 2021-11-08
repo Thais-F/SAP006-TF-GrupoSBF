@@ -1,4 +1,20 @@
+
+
 footer {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    padding: 3%;
+    background: #a81c1c;
 }
+
+.logo-img-black{
+    text-align: center;
+    position:fixed;
+    bottom: 0px;  /* o logo do footer está a baixo se quiser visualizar é ir no especionar, deixei o background vermelho pra gnt conseguir visualizar melhor  #F7F7F7*/
+  }
+
