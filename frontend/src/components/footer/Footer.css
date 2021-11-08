@@ -1,4 +1,11 @@
-footer {
+.footer {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    padding: 1%;
+    background-color: #F7F7F7;
 }

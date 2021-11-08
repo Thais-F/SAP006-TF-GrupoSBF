@@ -1,5 +1,6 @@
 import React from 'react'
 import Black from '../../assets/images/Black.png';
+import './Footer.css';
 
 export const Footer = () => {
     return (
