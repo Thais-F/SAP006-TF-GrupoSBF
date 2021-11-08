@@ -1,16 +1,21 @@
+body{
+    margin:0;
+    padding:0;
+}
+
 header{
     padding:0;
+    margin: 0;
     width: 100%;
 }
 .principal{
-    background-color: rgb(227,0,0);
+    background-color: #E30000;
     margin:0px auto;
     padding: 0px 45px 0px 30px;
     display: flex;
     align-items: center;
     min-height: 80px;
     max-height: 86px;
-    max-width: 1400px;
     justify-content: space-between;
 }
 .secondary{
@@ -37,7 +42,7 @@ header{
 }
 .btn-logo{
     border:none;
-    background-color: rgb(227,0,0);
+    background-color: #E30000;
 }
 .btn-cart{
     color:#ffffff;
@@ -45,7 +50,7 @@ header{
 }
 
 #outlet{
-    color: red;
+    color:#E30000;
     font-weight: bold;
 }
 

@@ -17,7 +17,7 @@ const Header = () => {
                     type='text'
                     className='inputSearch'
                     name='inputHeader'
-                    placeholder='O que você procura? :)'
+                    placeholder='Busque por produtos, esportes, marcas ou times'
                 />
 
                 <button type='button' className='btn-cart'

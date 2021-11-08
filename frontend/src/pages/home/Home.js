@@ -16,19 +16,18 @@ const Home = () => {
         }
         getPromos()        
       }, []);
-
-      
     
     return (
         <div>
             <h1>Home</h1>
             <div>{promotions.map((product) => (
+                <div>
                 <h1>{product.name}</h1>
+                <p>{product.price}</p>
+                </div>
             ))}</div>
         </div>
     )
-
-    
 }
 
 export default Home
