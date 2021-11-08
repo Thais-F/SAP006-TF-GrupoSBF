@@ -28,7 +28,6 @@ const Home = () => {
                     <p>{product.name}</p>
                 ))}
             </div>
-            <Footer/>
         </div>
 
         
