@@ -1,0 +1,35 @@
+.principal-container{
+    display: flex;
+    height: 296px;
+    width: 629px;
+    border-radius: 0%;
+}
+
+.cart-img{
+    height: 80px;
+    width: 190px;
+}
+
+.title{
+color: black;
+font-family: Roboto;
+font-size: 26px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.message{
+color: black;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
