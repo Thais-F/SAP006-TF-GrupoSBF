@@ -1,9 +1,10 @@
 import React from 'react'
+import Black from '../../assets/images/Black.png';
 
-export const Footer = ({className}) => {
+export const Footer = () => {
     return (
-        <h3 className={className}>
-            Centauro
-        </h3>
+        <footer className="footer">
+            <img src={Black} className='logo-img-black' alt='logo-black' />
+        </footer>
     )
 }

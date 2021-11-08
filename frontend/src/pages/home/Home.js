@@ -28,7 +28,7 @@ const Home = () => {
                     <p>{product.name}</p>
                 ))}
             </div>
-            <Footer className="footer" />
+            <Footer/>
         </div>
 
         
