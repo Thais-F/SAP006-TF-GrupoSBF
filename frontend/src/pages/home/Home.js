@@ -25,7 +25,6 @@ const Home = () => {
             <div>{promotions.map((product) => (
                 <h1>{product.name}</h1>
             ))}</div>
-           
         </div>
     )
 
