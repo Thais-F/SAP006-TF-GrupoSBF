@@ -1,7 +1,7 @@
 .inputSearch{
     outline: none;
-    width: 55%;
-    height: 34px;
+    width: 100%;
+    height: 38px;
     border-radius: 4px;
     text-transform: lowercase;
     padding-left: 2%;
@@ -11,3 +11,17 @@
     font-style: italic;
 }
 
+.searchInputs{
+width: 55vw;
+display: flex;
+}
+
+.searchIcon{
+    height: 40px;
+    width:50px;
+    margin-left: -55px;
+    background-color: white;
+    color:#E30000;
+    display: grid;
+    place-items: center;
+}

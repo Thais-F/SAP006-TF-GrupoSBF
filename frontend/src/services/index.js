@@ -13,17 +13,16 @@ export const getPromotions = async() => {
     return data
 };
 
+export const getProducts = async() => {
+  const myInit = {
+      method: "GET",
+      headers: {
+        "Content-type": "application/json",
+      },
+  };
 
-export const searchItem = async() => {
+  const response = await fetch("http://localhost:3000/search?q=Tênis&sort=relevance", myInit);
 
-const myInit = {
-  method: "GET",
-  headers: {
-    "Content-type": "application/json",
-  },
-}
-const response = await fetch("http://localhost:3000/search", myInit);
-
-const data = await response.json();
-return data
+  const data = await response.json();
+  return data
 };

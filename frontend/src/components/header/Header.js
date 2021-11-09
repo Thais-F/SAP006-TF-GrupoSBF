@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {useEffect, useState}from 'react';
 import { IoMdCart } from 'react-icons/io'
 import logo from '../../assets/images/centauro.png';
 import Input from '../inputSearch/InputSearch';
 import './index.css';
 
 const Header = () => {
+
+const [text, setText] = useState('');
+console.log(text)
+
+useEffect(()=>{
+  if(text){
+      //fetch("http://localhost:3000/search?q=Tênis&sort=relevance")
+  }
+},[text]);
+
+
     return (
         <header className="header">
             <div className="principal">
@@ -14,11 +25,16 @@ const Header = () => {
                 </button>
 
                 <Input
-                    type='text'
+                    type = 'text'
                     className='inputSearch'
                     name='inputHeader'
                     placeholder='Busque por produtos, esportes, marcas ou times'
-                />
+                    value={text}
+                    onChange={(str)=> setText(str)}
+
+
+                    />
+            
 
                 <button type='button' className='btn-cart'
                     onClick={() => alert('botão ok, aqui vai pegar a rota')}
@@ -48,3 +64,9 @@ const Header = () => {
 
 export default Header;
 
+/*   <input
+                    type = 'text'
+                    className='inputSearch'
+                    name='inputHeader'
+                    placeholder='Busque por produtos, esportes, marcas ou times'>
+            </input> */
