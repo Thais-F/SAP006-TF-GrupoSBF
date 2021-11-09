@@ -1,11 +1,13 @@
 import {React, useEffect, useState} from 'react';
 import { getPromotions
  } from '../../services';
-
+ import BannerProm from '../../assets/images/Banner.png';
+ import './banner.css';
 const Banner = () => {
   const [promotions, setPromotions] = useState([]);
 
     useEffect(() => {
+    
         async function getPromos() {
             const products = await getPromotions()
             setPromotions(products)
@@ -16,6 +18,10 @@ const Banner = () => {
 
     return (
         <div>
+          <div className="banner-promo">
+            <img src={BannerProm} className='banner-img' alt='banner mostrando desconto e cupom  ' />
+          </div>   
+          
             <div>{promotions.map((product) => (
       <div key={product.id} className="card">
       <p className="discount"> {product.discount === "null" ? '' : product.discount}</p>
