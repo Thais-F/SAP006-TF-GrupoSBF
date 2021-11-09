@@ -1,13 +1,33 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './index.css'
 
-const CartItem = (productsList) => {
+const CartItem = () => {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([JSON.parse(localStorage.getItem('produtosDoCarrinho'))])
 
-    useEffect(() => {
-        setProducts(productsList.productsList)
-    }, []);
+    console.log(products)
+
+    function plusOneToChart(e){
+        e.preventDefault();
+        const findProduct = products.find((item) => item.id === e.target.id);
+        findProduct.quantity += 1;
+        setProducts([...products])
+        localStorage.removeItem('produtosDoCarrinho')
+        localStorage.setItem('produtosDoCarrinho', JSON.stringify(products))
+    }
+
+    function minusOneToChart(e){
+
+    }
+
+    function removeOne(e){
+        
+    }
+
+
+    // useEffect(() => {
+    //     setProducts(productsList.productsList)
+    // }, []);
 
     return (
         <div className="cartItems">
@@ -26,10 +46,10 @@ const CartItem = (productsList) => {
                     <div className="info">
                         <h1>{product.name}</h1>
                         <div className="buttons">
-                            <button className="add-minus-button"><span className="add-minus">-</span></button>
+                            <button onClick={(e) => minusOneToChart(e)} className="add-minus-button"><span className="add-minus">-</span></button>
                             <p className="quantity">{product.quantity}</p>
-                            <button className="add-minus-button"><span className="add-minus">+</span></button>
-                            <button className="removeButton">Remover</button>
+                            <button onClick={(e) => plusOneToChart(e)} className="add-minus-button"><span className="add-minus">+</span></button>
+                            <button onClick={(e) => removeOne(e)} className="removeButton">Remover</button>
                         </div>
                         <span id="total-unique-price" className="active-desactive">R${product.price.toFixed(2)}</span>
                         {product.oldPrice && <span id="old-price" className="active-desactive">R${product.oldPrice.toFixed(2)}</span>}

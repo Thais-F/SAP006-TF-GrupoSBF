@@ -17,29 +17,29 @@ h3{
   text-decoration: none;
   font-weight: 400;
   color: #1A1A1A;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 4px;
-background-color: #F7F7F7;
-width: 47px;
-height: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 4px;
+  background-color: #F7F7F7;
+  width: 47px;
+  height: 18px;
 }
 .discount {
-width: 23px;
-height: 18px;
-/* left: 4px; */
-top: 0px;
-right: 24px;
-color:#E30000;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 18px;
-/* border: 1px solid #E30000;
-box-sizing: border-box;
-border-radius: 2px; */
+  width: 23px;
+  height: 18px;
+  /* left: 4px; */
+  top: 0px;
+  right: 24px;
+  color:#E30000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  /* border: 1px solid #E30000;
+  box-sizing: border-box;
+  border-radius: 2px; */
 }
 /* Image */
 img {
@@ -51,38 +51,43 @@ img {
 }
 /* Card */
 .card {
- display: flex; 
- flex-direction: column; 
-align-items: center;
-padding: 16px;
-position: relative;
-width: 208px;
-height: 362px;
-background: #FFFFFF;
-border: 1px solid #D6D6D6;
-box-sizing: border-box;
-border-radius: 4px
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  padding: 16px;
+  position: relative;
+  width: 208px;
+  height: 362px;
+  background: #FFFFFF;
+  border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  border-radius: 4px
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 .shipping {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 57px;
-position: static;
-width: 66px;
-height: 18px;
-left: 16px;
-right: 16px;
-top: 202px;
-background: #4D4D4D;
-border-radius: 2px;
-font-size: 12px;
-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 57px;
+  position: static;
+  width: 66px;
+  height: 18px;
+  left: 16px;
+  right: 16px;
+  top: 202px;
+  background: #4D4D4D;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #FFFFFF;
 }
+
 .price { 
   font-family: Roboto;
   font-style: normal;
@@ -91,6 +96,7 @@ color: #FFFFFF;
   line-height: 26px;
   color: #1A1A1A;
 }
+
 .old-price{
   position: absolute;
   width: 84px;

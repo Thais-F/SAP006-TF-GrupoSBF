@@ -1,6 +1,7 @@
 import React from 'react'
 import OrderMenu from '../../components/orderMenu/orderMenu'
-// import CartItem from '../../components/cartItem/cartItem'
+import CartItem from '../../components/cartItem/cartItem'
+import EmptyCart from '../../components/emptyCart/EmptyCart'
 
 const Cart = () => {
     const productsList = [
@@ -11,9 +12,9 @@ const Cart = () => {
 
     return (
         <div>
-            <h1>Cart - feito o componente itens</h1>
-            {/* <CartItem productsList={productsList}/> */}
-            <OrderMenu productsList={productsList}/>
+            {JSON.parse(localStorage.getItem('produtosDoCarrinho')) === null ?
+            <EmptyCart /> :
+            <CartItem/>}
         </div>
     )
 }
