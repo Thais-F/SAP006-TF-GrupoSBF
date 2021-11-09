@@ -10,18 +10,3 @@
     font-family: 'Roboto', sans-serif;
     font-style: italic;
 }
-
-.searchInputs{
-width: 55vw;
-display: flex;
-}
-
-.searchIcon{
-    height: 40px;
-    width:50px;
-    margin-left: -55px;
-    background-color: white;
-    color:#E30000;
-    display: grid;
-    place-items: center;
-}

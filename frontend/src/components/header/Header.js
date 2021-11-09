@@ -1,28 +1,34 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { IoMdCart } from 'react-icons/io'
 import logo from '../../assets/images/centauro.png';
 import Input from '../inputSearch/InputSearch';
+import { useNavigate } from 'react-router-dom';
+import { BsSearch } from 'react-icons/bs';
 // import Product from '../product/Product';
-import { Link } from 'react-router-dom';
 import './index.css';
 
 const Header = () => {
 
+
+    let navigate = useNavigate();
     const [products, setProducts] = useState([]);
     const [text, setText] = useState('');
 
-    useEffect(() => {
-        <Link to="/busca"></Link>
+    function filter() {
         if (text) {
             fetch(`http://localhost:3000/search?q=${text}&sort=relevance`)
                 .then((response) => response.json())
                 .then((response) => {
-                console.log(response)
+                    console.log(response)
                     setProducts(response);
                 })
         }
-    }, [text]);
+    }
 
+    function handleClick() {
+        navigate('/busca')
+        filter()
+    }
 
     return (
         <header className="header">
@@ -32,18 +38,27 @@ const Header = () => {
                     <img src={logo} className='logo-img' alt='logo' />
                 </button>
 
-                <Input
-                    type='text'
-                    className='inputSearch'
-                    name='inputHeader'
-                    placeholder='Busque por produtos, esportes, marcas ou times'
-                    value={text}
-                    onChange={(str) => setText(str)}
-                />
+                <div className='searchInputs'>
+                    <Input
+                        type='text'
+                        className='inputSearch'
+                        name='inputHeader'
+                        placeholder='Busque por produtos, esportes, marcas ou times'
+                        value={text}
+                        onChange={(str) => setText(str)}
+                    />
+
+                    <button className='searchIcon'
+                        onClick={handleClick}
+                    ><BsSearch /></button>
+
+                </div>
+
 
                 <button type='button' className='btn-cart'
                     onClick={() => alert('botão ok, aqui vai pegar a rota')}
-                >< IoMdCart /></button>
+                >< IoMdCart />
+                </button>
 
             </div>
 
@@ -70,7 +85,7 @@ const Header = () => {
                         <p className="discount"> {item.discount === "null" ? '' : item.discount}</p>
                         <img className="img" src={item.image} alt={item.name} />
                         <p className="shipping">
-                             {item.freeShipping === "true" ? '' : (<p>Frete Grátis</p>)}</p>
+                            {item.freeShipping === "true" ? '' : (<p>Frete Grátis</p>)}</p>
                         <div className="card-body">
                             <h2>{item.name}</h2>
                             <div className="price">
@@ -89,10 +104,3 @@ const Header = () => {
 }
 
 export default Header;
-
-/*   <input
-                    type = 'text'
-                    className='inputSearch'
-                    name='inputHeader'
-                    placeholder='Busque por produtos, esportes, marcas ou times'>
-            </input> */
