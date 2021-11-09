@@ -6,7 +6,7 @@ const CartItem = () => {
     const products = JSON.parse(localStorage.getItem('produtosDoCarrinho'))
     console.log(products)
 
-    plusOneToChart()
+  
 
 
 
@@ -31,10 +31,10 @@ const CartItem = () => {
                     <div className="info">  
                         <h1>{product.name}</h1>
                         <div className="buttons">
-                            <button onClick={(e) => minusOneToChart(e)} className="add-minus-button"><span className="add-minus">-</span></button>
+                            <button className="add-minus-button"><span className="add-minus">-</span></button>
                             <p className="quantity">{product.quantity}</p>
-                            <button onClick={(e) => plusOneToChart(e)} className="add-minus-button"><span className="add-minus">+</span></button>
-                            <button onClick={(e) => removeOne(e)} className="removeButton">Remover</button>
+                            <button className="add-minus-button"><span className="add-minus">+</span></button>
+                            <button className="removeButton">Remover</button>
                         </div>
                         <span id="total-unique-price" className="active-desactive">R${product.price.toFixed(2)}</span>
                         {product.oldPrice && <span id="old-price" className="active-desactive">R${product.oldPrice.toFixed(2)}</span>}
