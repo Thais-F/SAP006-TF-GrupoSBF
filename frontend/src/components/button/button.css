@@ -44,3 +44,15 @@
     background: #E30000;
     border-radius: 4px;
 }
+
+/*.btn:focus { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 24px;
+    position: static;
+    left: 2px;
+    top: calc(50% - 28px/2);
+    background: #E30000;
+    border-radius: 4px;
+}*/
