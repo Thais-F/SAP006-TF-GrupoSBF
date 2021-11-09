@@ -1,0 +1,46 @@
+.btn {
+    height: 28px;
+    width: 112px;
+    padding: 1px, 24px, 1px, 24px;
+
+}
+
+.btn:default {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 24px;
+    position: relative;
+    background: #E30000;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 24px;
+    position: relative;
+    background: #8C0000;
+    border-radius: 4px;
+}
+
+.btn:disabled {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 24px;
+    position: relative;
+}
+
+.btn:focus { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 24px;
+    position: static;
+    left: 2px;
+    top: calc(50% - 28px/2);
+    background: #E30000;
+    border-radius: 4px;
+}

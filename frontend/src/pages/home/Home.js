@@ -1,6 +1,6 @@
 import {React, useEffect, useState} from 'react'
 import { getPromotions } from '../../services'
-
+//import Button from '../../components/button/Button';
 //página de promoções
 
 const Home = () => {
@@ -33,3 +33,10 @@ const Home = () => {
 }
 
 export default Home
+
+/*   /* <Button
+          id="submit-button"
+          onClick={}
+          name="Entrar"
+          className="btn-login"
+        />*/
