@@ -4,8 +4,11 @@ import './Footer.css';
 
 export const Footer = () => {
     return (
-        <footer className="footer">
-            <img src={Black} className='logo-img-black' alt='logo-black' />
-        </footer>
+        <div className="container-footer">
+            <footer className="footer">
+                <img src={Black} className='logo-img-black' alt='logo-black' />
+            </footer>
+        </div>
+        
     )
 }

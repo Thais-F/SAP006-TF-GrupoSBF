@@ -1,5 +1,9 @@
+.container-footer {
+    display: flex;
+    margin-top: 50%;
+}
+
 .footer {
-    position: inherit;
     left: 0%;
     right: 0%;
     bottom: 0%;
