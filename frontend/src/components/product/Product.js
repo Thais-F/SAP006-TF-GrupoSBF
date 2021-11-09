@@ -1,11 +1,28 @@
 import{ React, useEffect, useState } from 'react';
 import { getProducts } from '../../services';
 // import Rating from './Rating';
+import Button from '../button/Button'
 import './product.css';
 
 
 const Product = () => {
   const [products, setProducts] = useState([]);
+  // localStorage.removeItem('produtosDoCarrinho')
+
+  const adcCarrinho = (event) => {
+    const newProduct = products.filter((item) => item.id === event.target.id)
+    const carrinho = JSON.parse(localStorage.getItem('produtosDoCarrinho'))
+
+    if(carrinho === null) {
+      localStorage.setItem('produtosDoCarrinho', JSON.stringify(newProduct))
+    } else {
+      const carrinhoAtualizado = [...carrinho, newProduct[0]]
+      localStorage.removeItem('produtosDoCarrinho')
+      localStorage.setItem('produtosDoCarrinho', JSON.stringify(carrinhoAtualizado))
+
+    }
+    console.log(JSON.parse(localStorage.getItem('produtosDoCarrinho')))    
+  }
 
   useEffect(() => {
       async function getPromos() {
@@ -15,7 +32,6 @@ const Product = () => {
       }
       getPromos()        
     }, []);
-
     
   return (
       <div>
@@ -32,6 +48,11 @@ const Product = () => {
              </div>
             {/* <Rating/> */}
             <h3>{items.colors} cores</h3>
+            <Button
+              id={items.id}
+              onClick={(event) => adcCarrinho(event)} 
+            />
+
            </div>
            </div>
         ))}
