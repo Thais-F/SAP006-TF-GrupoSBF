@@ -1,3 +1,6 @@
+body { margin:0; padding:0 }
+
+
 header{
     padding:0;
     width: 100%;
@@ -10,7 +13,6 @@ header{
     align-items: center;
     min-height: 80px;
     max-height: 86px;
-    max-width: 1400px;
     justify-content: space-between;
 }
 .secondary{
