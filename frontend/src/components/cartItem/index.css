@@ -1,10 +1,3 @@
-/* .cartItems h1 {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-} */
-
 .cartItems {
     display: flex;
     flex-direction: column;
@@ -112,6 +105,7 @@
 
 .buttons{
     display: flex;
+    margin-bottom: 5px;
 }
 
 .quantity{
@@ -174,6 +168,48 @@ text-transform: uppercase;
 color: #4D4D4D;
 }
 
+.total-spans{
+    display: flex;
+    flex-direction: column;
+}
+
+#total-old-price, #old-price {
+width: 84px;
+height: 16px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 20px;
+text-decoration-line: line-through;
+text-transform: uppercase;
+color: #4D4D4D;
+}
+
+#total-price-with-old-orice, #total-price, #total-unique-price {
+width: 84px;
+height: 26px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+/* Neutral / Black */
+color: #1A1A1A;
+/* Neutral / 600 */
+}
+
+.removeButton:hover{
+    /* Semantic / Negative Default */
+    color: #FF0F0F;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.add-minus-button:hover{
+    background: #4D4D4D;
+    cursor: pointer;
+}
+
 @media(min-width:1024px){
     .card {
         width: 750px;
@@ -205,39 +241,56 @@ color: #4D4D4D;
     .card h1 {
         position: relative;
         left: 11px;
-    }
+        width: 176px;
+        height: 36px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        /* Neutral / Black */
+        color: #1A1A1A;
+}
 
-    .total-unique-price{
+    #total-unique-price{
         position: relative;
         left: 126px;
+        top:2px;
     }
 
     #total-old-price {
         position: relative;
-        left: 17px;
-        top:22px;
+        left: 110px;
+        top: 4px;
     }
 
     #total-price {
         position: relative;
-        left: 166px;
+        left: 177px;
     }
 
     #total-price-with-old-orice {
         position: relative;
-        left: 81px;
+        left: 93px;
+        top: 10px;
     }
 
-    .old-price{
+    #old-price{
         position: relative;
-        left: 57px;
-        top: 24px;
+        left: 59px;
+        top: 18px;
+    }
+
+    .total-spans {
+       display: flex;
+       align-items: flex-start;
     }
 
     .removeButton{
         position: relative;
         left: 44px;
-        top: 28px;
+        top: 24px;
+        width: 48px;
     }
 
     .add-minus-button{
@@ -256,17 +309,21 @@ color: #4D4D4D;
 
     #h1-quantity{
         position: relative;
-        left: 253px;
+        left: 234px;
     }
 
     #h1-Unit{
         position: relative;
-        left: 271px;
+        left: 252px;
     }
 
     #h1-total{
         position: relative;
-        left: 261px;
+        left: 253px;
+    }
+
+    .buttons {
+        margin-bottom: 0;
     }
 }
 

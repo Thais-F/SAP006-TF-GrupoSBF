@@ -31,11 +31,12 @@ const CartItem = (productsList) => {
                             <button className="add-minus-button"><span className="add-minus">+</span></button>
                             <button className="removeButton">Remover</button>
                         </div>
-                        <p className="total-unique-price">R${product.price.toFixed(2)}</p>
-                        {product.oldPrice && <span className="old-price">R${product.oldPrice.toFixed(2)}</span>}
-                        <span id={product.oldPrice ? "total-price-with-old-orice" : "total-price"} className="active-desactive">R${(product.price.toFixed(2) * product.quantity).toFixed(2)}</span>
-                        {product.oldPrice && <span id="total-old-price" className="active-desactive">R${(product.oldPrice.toFixed(2) * product.quantity).toFixed(2)}</span>}
-
+                        <span id="total-unique-price" className="active-desactive">R${product.price.toFixed(2)}</span>
+                        {product.oldPrice && <span id="old-price" className="active-desactive">R${product.oldPrice.toFixed(2)}</span>}
+                        <div className="total-spans">
+                        <span id={product.oldPrice ? "total-price-with-old-orice" : "total-price"}>R${(product.price.toFixed(2) * product.quantity).toFixed(2)}</span>
+                        {product.oldPrice && <span id="total-old-price" >R${(product.oldPrice.toFixed(2) * product.quantity).toFixed(2)}</span>}
+                        </div>
                     </div>
                 </div>
             ))}
