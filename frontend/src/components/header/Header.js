@@ -4,6 +4,7 @@ import logo from '../../assets/images/centauro.png';
 import Input from '../inputSearch/InputSearch';
 import './index.css';
 
+
 const Header = () => {
     return (
         <header className="header">
