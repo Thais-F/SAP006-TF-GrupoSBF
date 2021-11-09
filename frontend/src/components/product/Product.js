@@ -1,23 +1,23 @@
-import{ React, useEffect, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import { getProducts } from '../../services';
 import Rating from './Rating';
 import './product.css';
-
 
 const Product = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-      async function getPromos() {
-          const product = await getProducts()
-          setProducts(product)
-          return product
-      }
-      getPromos()        
-    }, []);
+    async function getPromos() {
+      const product = await getProducts()
+      setProducts(product)
+      return product
+    }
+    getPromos()
+  }, []);
 
-    
+
   return (
+
       <div className="grid-container">
           {products.map((items) => (
             <div key={items.id} className="card">
@@ -40,6 +40,7 @@ const Product = () => {
            </div>
         ))}
       </div>
+
   )
 }
 

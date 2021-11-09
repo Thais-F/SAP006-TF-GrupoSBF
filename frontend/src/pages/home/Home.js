@@ -9,9 +9,6 @@ const Home = () => {
         <Product />
         </div>
 
-        
-
-        
     )
 }
 
