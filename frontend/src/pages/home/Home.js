@@ -26,6 +26,7 @@ const Home = () => {
                 <p>{product.price}</p>
                 </div>
             ))}</div>
+           
         </div>
     )
 }

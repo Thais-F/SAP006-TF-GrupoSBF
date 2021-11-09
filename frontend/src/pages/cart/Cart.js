@@ -1,13 +1,13 @@
 import React from 'react';
 import Product from '../../components/product/Product';
 
-
 const Cart = () => {
     return (
-        <div>
+        <main className="container-grid">
             <Product />
             <p> Cart </p>
-        </div>
+
+        </main>
     )
 }
 
