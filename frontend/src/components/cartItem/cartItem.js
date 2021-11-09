@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './index.css'
 
-const CartItem = (productsList) => {
+const CartItem = () => {
 
-    const [products, setProducts] = useState([])
+    const products = JSON.parse(localStorage.getItem('produtosDoCarrinho'))
+    console.log(products)
 
-    useEffect(() => {
-        setProducts(productsList.productsList)
-    }, []);
+  
+
+
+
+    // useEffect(() => {
+    //     setProducts(productsList.productsList)
+    // }, []);
 
     return (
         <div className="cartItems">
