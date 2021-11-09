@@ -1,54 +1,44 @@
 .btn {
     height: 28px;
     width: 112px;
-    top: 2406px;
-    border-radius: 4px;
     padding: 1px, 24px, 1px, 24px;
 
 }
 
-.btn:default{
+.btn:default {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1px 24px;
     position: relative;
-    width: 112px;
-    height: 28px;
     background: #E30000;
     border-radius: 4px;
 }
 
-.btn:hover{
+.btn:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1px 24px;
     position: relative;
-    width: 112px;
-    height: 28px;
     background: #8C0000;
     border-radius: 4px;
 }
 
-.btn:disabled{
+.btn:disabled {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1px 24px;
     position: relative;
-    width: 112px;
-    height: 28px;
 }
 
-.btn:focus{
+.btn:focus { 
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1px 24px;
     position: static;
-    width: 112px;
-    height: 28px;
     left: 2px;
     top: calc(50% - 28px/2);
     background: #E30000;
