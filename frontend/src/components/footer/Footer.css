@@ -1,0 +1,19 @@
+.container-footer {
+    display: flex;
+    margin-top: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer {
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: #F7F7F7;
+}
