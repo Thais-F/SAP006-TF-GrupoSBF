@@ -7,6 +7,7 @@ import { BsSearch } from 'react-icons/bs';
 // import Product from '../product/Product';
 import './index.css';
 
+
 const Header = () => {
 
 
