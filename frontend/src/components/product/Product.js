@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { getProducts } from '../../services';
-// import Rating from './Rating';
+import Rating from './Rating';
 import './product.css';
 
 const Product = () => {
@@ -29,7 +29,7 @@ const Product = () => {
               <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
               R$ {items.price}
             </div>
-            {/* <Rating/> */}
+            < Rating /> 
             <h3>{items.colors} cores</h3>
           </div>
         </div>
