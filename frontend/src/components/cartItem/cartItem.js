@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { postOrder } from '../../services';
+import Modal from '../modal/Modal';
 import './index.css'
 
 const CartItem = () => {
 
     const [products, setProducts] = useState([])
+    const [isModalVisible, setIsModalVisible] = useState(false)
 
     useEffect(() => {
         setProducts(JSON.parse(localStorage.getItem('produtosDoCarrinho')))
@@ -82,13 +84,14 @@ const CartItem = () => {
             }
           });
 
-        console.log(items)
-        const response = await postOrder(items)
-        console.log(response)
+        const response = await postOrder({'items':items});
+        console.log(response);
+        // setIsModalVisible(true);
     }
 
 
     return (
+        // {isModalVisible && <Modal/> }
         <main className={"main-content"}>
         <div className="cartItems">
             <div className="tittles">

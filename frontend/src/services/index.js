@@ -33,8 +33,10 @@ export const postOrder = async(reqBody) => {
     headers: {
       "Content-type": "application/json",
     },
-    body: JSON.stringify({reqBody}),
+    body: JSON.stringify(reqBody),
 };
+
+  console.log(JSON.stringify(reqBody))
   const response = await fetch("http://localhost:3000/cart", myInit);
 
   const data = await response.json();
