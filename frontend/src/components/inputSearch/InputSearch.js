@@ -1,6 +1,5 @@
-import React from 'react';
+ import React from 'react';
 import './index.css';
-
 
 function Input({ placeholder, name, className, value, onChange }) {
 
@@ -26,4 +25,4 @@ function handleChange(event){
     )
 }
 
-export default Input;
+export default Input; 

@@ -1,13 +1,13 @@
 
 import React from 'react';
 import Product from '../../components/product/Product';
+import './index.css';
 
 const Home = () => {
     return (
         <div>
         <Product />
         </div>
-
     )
 }
 

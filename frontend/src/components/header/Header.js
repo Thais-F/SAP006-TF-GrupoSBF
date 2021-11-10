@@ -7,9 +7,7 @@ import { BsSearch } from 'react-icons/bs';
 // import Product from '../product/Product';
 import './index.css';
 
-
 const Header = () => {
-
 
     let navigate = useNavigate();
     const [products, setProducts] = useState([]);
@@ -30,13 +28,22 @@ const Header = () => {
         navigate('/busca')
         filter()
     }
+    function handleCart() {
+        navigate('/cart')
+    }
+
+    function navigateHome(){
+        navigate('/')
+    }
 
     return (
         <header className="header">
             <div className="principal">
 
                 <button type='button' className='btn-logo'>
-                    <img src={logo} className='logo-img' alt='logo' />
+                    <img src={logo} className='logo-img' alt='logo' 
+                    onClick={navigateHome}
+                    />
                 </button>
 
                 <div className='searchInputs'>
@@ -57,7 +64,7 @@ const Header = () => {
 
 
                 <button type='button' className='btn-cart'
-                    onClick={() => alert('botão ok, aqui vai pegar a rota')}
+                    onClick={handleCart}
                 >< IoMdCart />
                 </button>
 
@@ -80,6 +87,7 @@ const Header = () => {
 
             </div>
 
+            <div className="grid-container">
             {products.map((item) => (
                 <ul >
                     <li key={item.id} className="card">
@@ -93,12 +101,12 @@ const Header = () => {
                                 <p className="old-price"> {item.oldPrice === "null" ? '' : item.oldPrice}</p>
                                 R$ {item.price}
                             </div>
-                            {/* <Rating/> */}
+                            {/* <Rating/> */ }
                             <h3>{item.colors} cores</h3>
                         </div>
                     </li>
                 </ul>
-            ))}
+            ))}</div>
 
         </header>
     )
