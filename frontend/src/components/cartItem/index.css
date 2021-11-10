@@ -1,0 +1,332 @@
+.cartItems {
+    display: flex;
+    flex-direction: column;
+}    
+
+.cartItems h1 {
+    font-family: Roboto; /* importarrrrrrrrrrrrr */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    Width: 106px;
+    Height: 22px;
+    margin-left: 6px;
+    font-family: Roboto;
+}
+
+.active-desactive{
+    display: none;
+}
+
+.card-div {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    padding: 10px;
+    width: 90%;
+    align-self: center;
+    height:100px
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-div .img-div img {
+    position: static;
+    width: 80px;
+    height: 80px;
+    left: 8px;
+    top: 28px;
+}
+
+.card-div h1 {
+    /* position: absolute; */
+    width: 200px;
+    height: 36px;
+    /* left: 120px;
+    top: 8px; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    /* Neutral / Black */
+    color: #1A1A1A;
+    margin:0
+}
+
+.add-minus-button {
+    /* position: absolute; */
+    width: 24px;
+    height: 24px;
+    /* left: 0px;
+    top: 0px; */
+
+    /* Neutral / 200 */
+
+    background: #F7F7F7;
+    /* Neutral / 300 */
+
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 2px 0px 0px 2px;
+}
+
+/* .info button span  */
+.add-minus{
+    /* position: absolute; */
+    width: 21.6px;
+    height: 14px;
+    /* left: 47.2px;
+    top: 5px; */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.buttons{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.quantity{
+    margin:0;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 13px;
+    padding: 3px;
+    /* Neutral / White */
+    background: #FFFFFF;
+    /* Neutral / 300 */
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    color:#000000
+}
+
+.removeButton {
+    background: none;
+    border: none;    
+    width: 40px;
+    height: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #4D4D4D;
+    align-self: center;
+}
+
+.total-unique-price{
+    margin:0;
+    margin-top: 4px;
+    width: 84px;
+    height: 26px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* Neutral / Black */
+    color: #1A1A1A;
+}
+
+.old-price-span{
+width: 84px;
+height: 16px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-decoration-line: line-through;
+text-transform: uppercase;
+/* Neutral / 600 */
+color: #4D4D4D;
+}
+
+.total-spans{
+    display: flex;
+    flex-direction: column;
+}
+
+#total-old-price, #old-price {
+width: 84px;
+height: 16px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 20px;
+text-decoration-line: line-through;
+text-transform: uppercase;
+color: #4D4D4D;
+}
+
+#total-price-with-old-orice, #total-price, #total-unique-price {
+width: 84px;
+height: 26px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+/* Neutral / Black */
+color: #1A1A1A;
+/* Neutral / 600 */
+}
+
+.removeButton:hover{
+    /* Semantic / Negative Default */
+    color: #FF0F0F;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.add-minus-button:hover{
+    background: #4D4D4D;
+    cursor: pointer;
+}
+
+@media(min-width:1024px){
+    .card-div {
+        width: 750px;
+        align-self: flex-start;
+        margin-left: 15px;
+    }
+
+    .info{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .tittles {
+        display: flex;
+        /* margin-left: 35px; */
+        margin-left:10px;
+        margin-top: 20px;
+        /* justify-content: flex-start; */
+    }
+
+    .tittles h1 {
+        margin-right: 20px;
+    }
+
+    .card-div {
+        justify-content: flex-start;
+    }
+
+    .card-div h1 {
+        position: relative;
+        left: 11px;
+        width: 176px;
+        height: 36px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        /* Neutral / Black */
+        color: #1A1A1A;
+}
+
+    #total-unique-price{
+        position: relative;
+        left: 126px;
+        top:2px;
+    }
+
+    #total-old-price {
+        position: relative;
+        left: 110px;
+        top: 4px;
+    }
+
+    #total-price {
+        position: relative;
+        left: 177px;
+    }
+
+    #total-price-with-old-orice {
+        position: relative;
+        left: 93px;
+        top: 10px;
+    }
+
+    #old-price{
+        position: relative;
+        left: 59px;
+        top: 18px;
+    }
+
+    .total-spans {
+       display: flex;
+       align-items: flex-start;
+    }
+
+    .removeButton{
+        position: relative;
+        left: 44px;
+        top: 24px;
+        width: 48px;
+    }
+
+    .add-minus-button{
+        position: relative;
+        left: 104px;
+    }
+
+    .quantity{
+        position: relative;
+        left: 104px;
+    }
+
+    .active-desactive{
+        display: inline-block;
+    }
+
+    #h1-quantity{
+        position: relative;
+        left: 234px;
+    }
+
+    #h1-Unit{
+        position: relative;
+        left: 252px;
+    }
+
+    #h1-total{
+        position: relative;
+        left: 253px;
+    }
+
+    .buttons {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    
+}

@@ -1,9 +1,15 @@
+body{
+    margin:0;
+    padding:0;
+}
+
 header{
     padding:0;
+    margin: 0;
     width: 100%;
 }
 .principal{
-    background-color: rgb(227,0,0);
+    background-color: #E30000;
     margin:0px auto;
     padding: 0px 45px 0px 30px;
     display: flex;
@@ -36,7 +42,7 @@ header{
 }
 .btn-logo{
     border:none;
-    background-color: rgb(227,0,0);
+    background-color: #E30000;
 }
 .btn-cart{
     color:#ffffff;
@@ -44,9 +50,25 @@ header{
 }
 
 #outlet{
-    color: red;
+    color:#E30000;
     font-weight: bold;
 }
+.searchIcon{
+    height: 40px;
+    width:50px;
+    margin-left: -55px;
+    background-color: transparent;
+    color:#E30000;
+    border:none;
+    display: grid;
+    place-items: center;
+}
+
+.searchInputs{
+    width: 55vw;
+    display: flex;
+    }
+    
 
 @media screen and (max-width:768px){
     .secondary{
