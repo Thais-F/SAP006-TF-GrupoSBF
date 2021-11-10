@@ -1,6 +1,6 @@
 import{ React, useEffect, useState } from 'react';
 import { getProducts } from '../../services';
-// import Rating from './Rating';
+import Rating from './Rating';
 import './product.css';
 
 
@@ -28,19 +28,17 @@ const Product = () => {
               <div>
              <p className="shipping"> {items.freeShipping === "true" ? '' : (<p>Frete Grátis</p>)}</p>
              </div>
-           {/* <div className="card-body"> */}
             <h2>{items.name}</h2>
               <p className="price">
                R$ {items.price}
               </p>
               <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
-            {/* <Rating>
+            <Rating>
              rate={items.rate}
              reviews={items.reviews}
-            </Rating> */}
+            </Rating>
               <h3>{items.colors} cores</h3>
            </div>
-          //  </div>
         ))}
       </div>
   )
