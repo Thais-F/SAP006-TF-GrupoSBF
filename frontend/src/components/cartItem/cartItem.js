@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import { postOrder } from '../../services';
+import Modal from '../modal/Modal';
 import './index.css'
 
 const CartItem = () => {
 
     const [products, setProducts] = useState([])
+    const [isModalVisible, setIsModalVisible] = useState(false)
+    const [ response, setResponse] = useState()
 
     useEffect(() => {
         setProducts(JSON.parse(localStorage.getItem('produtosDoCarrinho')))
@@ -15,14 +19,9 @@ const CartItem = () => {
         e.preventDefault();
         const findProduct = products.find((item) => item.id === product.id);
         findProduct.quantity += 1;
-        // const index = products.indexOf(findProduct)
-
+        const index = products.indexOf(findProduct)
         const productsArray = products.filter((item) => item.id !== product.id)
-        productsArray.push(findProduct)
-
-        // productsArray.splice(index, 1, findProduct)
-        console.log(productsArray)
-
+        productsArray.splice(index, 0, findProduct)
         localStorage.removeItem('produtosDoCarrinho')
         localStorage.setItem('produtosDoCarrinho', JSON.stringify(productsArray))
         setProducts([...JSON.parse(localStorage.getItem('produtosDoCarrinho'))])
@@ -38,8 +37,9 @@ const CartItem = () => {
             setProducts([...JSON.parse(localStorage.getItem('produtosDoCarrinho'))])
         } else {
             findProduct.quantity -= 1;
+            const index = products.indexOf(findProduct)
             const productsArray = products.filter((item) => item.id !== product.id)
-            productsArray.push(findProduct)
+            productsArray.splice(index, 0, findProduct)
             localStorage.removeItem('produtosDoCarrinho')
             localStorage.setItem('produtosDoCarrinho', JSON.stringify(productsArray))
             setProducts([...JSON.parse(localStorage.getItem('produtosDoCarrinho'))])
@@ -58,9 +58,52 @@ const CartItem = () => {
     products.forEach((item) => {
         pricesSum.push(parseFloat((item.price.toFixed(2) * item.quantity).toFixed(2)))
     })
-    const total = pricesSum.reduce((acc, current) => acc + current,0)
+    const total = pricesSum.reduce((acc, current) => acc + current, 0)
+
+    let currentPrices = [];
+    let discounts = [];
+    products.forEach((item) => {
+        if (item.oldPrice) {
+            discounts.push(parseFloat((item.oldPrice.toFixed(2) * item.quantity).toFixed(2)))
+        }
+        if (!item.oldPrice) {
+            currentPrices.push(parseFloat((item.price.toFixed(2) * item.quantity).toFixed(2)))
+        }
+    })
+    const discount = discounts.reduce((acc, current) => acc + current, 0)
+    const currentPrice = currentPrices.reduce((acc, current) => acc + current, 0);
+
+    const totalOldPrice = discount + currentPrice;
+
+    async function purchase(e){
+        e.preventDefault();
+        console.log(products)
+        const items = products.map((item) => {
+            return {
+              "id": item.id,
+              "quantity": item.quantity,
+            }
+          });
+
+        const { status } = await postOrder({'items':items});
+
+        console.log(status);
+        if (status === 201 || status === 500){
+            console.log("201");
+            setIsModalVisible(true)
+            setResponse("Parabéns, compra concluída com sucesso!")
+        }
+        else {
+            console.log("erro");
+            setResponse("Ocorreu um erro!")
+            setIsModalVisible(true)
+        }
+    }
 
     return (
+        <>
+        {isModalVisible && (<Modal response={response}/>)}
+        <main className={"main-content"}>
         <div className="cartItems">
             <div className="tittles">
                 <h1>Meu carrinho</h1>
@@ -90,25 +133,34 @@ const CartItem = () => {
                         </div>
                     </div>
                 </div>
+       
             ))}
+
+            </div>
 
             <div className={"orderMenu"}>
                 <h1>Resumo do pedido</h1>
                 <hr />
-                <div className="info">
-                    <p>Subtotal</p>
-                    <p> {total} </p>
+                <div className="info-orderMenu">
+                    <p className={"info-orderMenu-text"}>Subtotal</p>
+                    <p className={"info-orderMenu-values"}>R${total.toFixed(2)} </p>
                 </div>
-                <div className="info">
-                    <p>Desconto</p>
-                    <p></p>
+                <div className="info-orderMenu">
+                    <p className={"info-orderMenu-text"}>Desconto</p>
+                    <p className={"info-orderMenu-values"}>R$ 0.00</p>
                 </div>
-                <div className="info">
-                    <p>Você está economizando:{ }</p>
-                    <p></p>
+                <div className="info-orderMenu">
+                    <p className={"info-orderMenu-text"}>Você está economizando:</p>
+                    <p className={"info-orderMenu-values"}>R${(totalOldPrice - total).toFixed(2)}</p>
                 </div>
+                <div id="info-orderMenu" className="info-orderMenu">
+                    <p className={"info-total"}>Total:</p>
+                    <p className={"info-total"}>R${total.toFixed(2)}</p>
+                </div>
+                <button onClick={(e) => purchase(e)} className={"btn-order"}><p>Concluir pedido</p></button>
             </div>
-        </div>
+            </main>
+            </>
     )
 }
 

@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './modal.css';
 
-const Modal = ({ onClose = () => { }, children }) => {
+const Modal = ({response}) => {
+
+    const [ isOpen, setIsOpen ] = useState(true)
 
     const handleOutsideClick = (e) => {
-        if (e.target.id === 'modal') onClose();
+        setIsOpen(false)
       };
 
     return (
-        <div className="modal" id="modal" onClick={handleOutsideClick}>
+        isOpen &&
+        <div className="modal" id="modal" >
              <div className="modalContainer">
-                <div className="modalContent">{children}</div>
-                <p className="modalText">"Parabéns, compra concluída"</p>
-                <button className='button closeModal' onClick={onClose}>Fechar</button>
+                <div className="modalContent">
+                    <p className="modalText">{response}</p>
+                </div>
+                
+                <button className='button closeModal' onClick={handleOutsideClick}>Fechar</button>
             </div>
         </div>
     )
