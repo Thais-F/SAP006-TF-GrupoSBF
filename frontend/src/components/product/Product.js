@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { getProducts } from '../../services';
-// import Rating from './Rating';
+import Rating from './Rating';
 import Button from '../button/Button'
 import './product.css';
 
