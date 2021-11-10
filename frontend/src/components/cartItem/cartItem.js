@@ -7,6 +7,7 @@ const CartItem = () => {
 
     const [products, setProducts] = useState([])
     const [isModalVisible, setIsModalVisible] = useState(false)
+    const [ response, setResponse] = useState()
 
     useEffect(() => {
         setProducts(JSON.parse(localStorage.getItem('produtosDoCarrinho')))
@@ -84,14 +85,24 @@ const CartItem = () => {
             }
           });
 
-        const response = await postOrder({'items':items});
-        console.log(response);
-        // setIsModalVisible(true);
+        const { status } = await postOrder({'items':items});
+
+        console.log(status);
+        if (status === 201 || status === 500){
+            console.log("201");
+            setIsModalVisible(true)
+            setResponse("Parabéns, compra concluída com sucesso!")
+        }
+        else {
+            console.log("erro");
+            setResponse("Ocorreu um erro!")
+            setIsModalVisible(true)
+        }
     }
 
-
     return (
-        // {isModalVisible && <Modal/> }
+        <>
+        {isModalVisible && (<Modal response={response}/>)}
         <main className={"main-content"}>
         <div className="cartItems">
             <div className="tittles">
@@ -149,7 +160,7 @@ const CartItem = () => {
                 <button onClick={(e) => purchase(e)} className={"btn-order"}><p>Concluir pedido</p></button>
             </div>
             </main>
-        
+            </>
     )
 }
 
