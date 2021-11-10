@@ -5,9 +5,8 @@ import Product from '../../components/product/Product'
 const Search = () => {
     return (
         <div>
-           <h1>Search</h1>
-           <Product/> 
-        
+           <h1>Search</h1> 
+            <Product />
         </div>
     )
 }

@@ -1,21 +1,8 @@
-import {React, useEffect, useState} from 'react';
-import { getProducts } from '../../services';
+import React from 'react';
 
-const Rating = () => {
-
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-      async function getPromos() {
-          const product = await getProducts()
-          setProducts(product)
-          return product
-      }
-      getPromos()        
-    }, []);
-
+const Rating = ({items}) => {
   return (
-    <div>{products.map((items) => (
+    <div>
     <div className="rate">
       <span>
         <i
@@ -74,7 +61,6 @@ const Rating = () => {
       </span>
       <span> ({items.reviews})</span>
     </div>
-        ))}
         </div>
   );
 }
