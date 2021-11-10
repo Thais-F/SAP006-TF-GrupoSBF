@@ -1,12 +1,7 @@
 import React from 'react';
 import './index.css';
 
-
 function Input({ placeholder, name, className, value, onChange }) {
-
-function handleChange(event){
-    onChange(event.target.value);
-}  
 
     return (
         <div className='search'>
@@ -16,14 +11,13 @@ function handleChange(event){
                     name={name}
                     className={className}
                     value={value}
-                    onChange={handleChange}
+                    onChange={(e)=> localStorage.setItem('searchValue', e.target.value)}
                 />
 
             </div>
-            <div className='dataResult'></div>
-
+        
         </div>
     )
 }
 
-export default Input;
+export default Input; 
