@@ -10,6 +10,8 @@ const Product = () => {
 
   const adcCarrinho = (event) => {
     const newProduct = products.filter((item) => item.id === event.target.id)
+    newProduct[0].quantity = 1
+    console.log(newProduct)
     const carrinho = JSON.parse(localStorage.getItem('produtosDoCarrinho'))
 
     if(carrinho === null) {
@@ -39,17 +41,18 @@ const Product = () => {
             <div key={items.id} className="card">
               <div>
               <p className="discount"> {items.discount === "null" ? '' : items.discount}</p>
-              <img className="img" src={items.image} alt={items.name}/>
+              {/* <img className="img" src={items.image} alt={items.name}/> */}
               </div>
               <div>
-             <p className="shipping"> {items.freeShipping === "true" ? '' : (<p>Frete Grátis</p>)}</p>
-             </div>
-            {/* <Rating/> */}
-            <h3>{items.colors} cores</h3>
-            <Button
+              <Button
               id={items.id}
               onClick={(event) => adcCarrinho(event)} 
             />
+             {/* <p className="shipping"> {items.freeShipping === "true" ? '' : (<p>Frete Grátis</p>)}</p> */}
+             </div>
+            {/* <Rating/> */}
+            {/* <h3>{items.colors} cores</h3> */}
+            
 
            <div className="card-body">
             <h2>{items.name}</h2>
@@ -57,7 +60,7 @@ const Product = () => {
                R$ {items.price}
               </p>
               <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
-            <Rating/>
+            {/* <Rating/> */}
               <h3>{items.colors} cores</h3>
            </div>
            </div>
