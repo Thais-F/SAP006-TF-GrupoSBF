@@ -17,7 +17,7 @@ const Header = () => {
 
     function filter() {
         if (text) {
-            fetch(`http://localhost:3000/search?q=${text}&sort=relevance`)
+            fetch(`http://localhost:3000/search?q=${text}&sort=highestPrice`)
                 .then((response) => response.json())
                 .then((response) => {
                     console.log(response)
