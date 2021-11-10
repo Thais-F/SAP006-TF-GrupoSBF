@@ -1,21 +1,27 @@
+
 import { React, useEffect, useState } from 'react';
 import { getProducts } from '../../services';
 
-const Rating = () => {
+const Rating = ({items}) => {
+
+
+  
 
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
+
+  /*useEffect(() => {
     async function getPromos() {
       const product = await getProducts()
       setProducts(product)
       return product
     }
     getPromos()
-  }, []);
+  }, []);*/
 
   return (
-    <div>{products.map((items) => (
+    //<div>{products.map((items) => (
+      <div>
       <div className="rate">
         <span>
           <i className={
@@ -72,9 +78,9 @@ const Rating = () => {
         </span>
         <span> ({items.reviews})</span>
       </div>
-    ))}
+    ))
     </div>
-  );
+);
 }
 
-export default Rating;
+export default Rating; 

@@ -12,13 +12,13 @@ body{
     grid-template-columns: repeat(4, 1fr);
   }
 
- /* header {
+  header {
     padding:0;
     margin: 0;
     width: 100%;
     position:fixed;
     z-index: 3;
-*/
+  }
 
 .principal{
     background-color: #E30000;
@@ -71,7 +71,8 @@ body{
     width:50px;
     margin-left: -55px;
     background-color: transparent;
-    color:#E30000;
+    /*color:#E30000;*/
+    color:white;
     border:none;
     display: grid;
     place-items: center;
