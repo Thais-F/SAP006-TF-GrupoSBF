@@ -32,19 +32,20 @@ Os usuarios podem escolher os produtos, pesquisar o nome do item desejado ou esc
  
 ## 👩‍💻 5.Tecnologias Ultilizadas:
 
-HTML5 semântico
-Conceitos fundamentais de CSS3
-Mobile first
-Js Node 
-React 
-Figma 
-vscode  
-github 
-git
+- [Conceitos fundamentais de CSS3](#-css)
+- [HTML5 semântico](#-html)
+- [Mobile first](#-mobile)
+- [Js Node](#-node)
+- [React](#-react)
+- [Figma ](#-figma)
+- [vscode ](#-code)
+- [github ](#-github)
+- [git ](#-git)
 
 ## :woman: 6.Desenvolvido por:
-Guiliana Thamiê
-Lediane Machado
-Thais Fernandes
-Thalita Machado
-Thalita Neves
+- [Guiliana Thamiê](#-Gui)
+- [Lediane Machado](#-ledi)
+- [Thais Fernandes](#-thais)
+- [Thalita Machado](#-tha)
+- [Thalita Neves](#-thali)
+
