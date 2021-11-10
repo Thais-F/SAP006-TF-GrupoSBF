@@ -1,4 +1,4 @@
-## Mini e-commerce
+## Mini e-commerce Centauro
 ## 📑 Indice 
 - [Introdução](#-introdução)
 - [Resumo do projeto](#-resumo)
