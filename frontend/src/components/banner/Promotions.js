@@ -16,7 +16,7 @@ const Promotions = () => {
       }, []);
 
     return (
-      <div className="grid-container">
+      <div className="containerhome">
           {promotions.map((items) => (
             <div key={items.id} className="promcard">
               <div>

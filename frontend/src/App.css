@@ -1,8 +1,6 @@
-*{
-   margin: 0;
-   padding: 0;
+root {
    --vermelho: #E30000;
-    --branco: #FFFFFF;
+   --branco: #FFFFFF;
    --brancoFooter:#F7F7F7;
    --cinzaFosco:  #4D4D4D;
    --cinzaCard: #D6D6D6;
