@@ -1,9 +1,8 @@
-import{ React, useEffect, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import { getProducts } from '../../services';
 // import Rating from './Rating';
 import Button from '../button/Button'
 import './product.css';
-
 
 const Product = () => {
   const [products, setProducts] = useState([]);
@@ -36,29 +35,38 @@ const Product = () => {
     }, []);
     
   return (
-      <div>
+
+      <div className="grid-container">
           {products.map((items) => (
             <div key={items.id} className="card">
+              <div>
               <p className="discount"> {items.discount === "null" ? '' : items.discount}</p>
-              <img className="img" src={items.image} alt={items.name}/>
-             <p className="shipping"> {items.freeShipping === "true" ? '' : (<p>Frete Grátis</p>)}</p>
-           <div className="card-body">
-           <h2>{items.name}</h2>
-           <div className="price">
-           <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
-           R$ {items.price}
-             </div>
-            {/* <Rating/> */}
-            <h3>{items.colors} cores</h3>
-            <Button
+              {/* <img className="img" src={items.image} alt={items.name}/> */}
+              </div>
+              <div>
+              <Button
               id={items.id}
               onClick={(event) => adcCarrinho(event)} 
             />
+             {/* <p className="shipping"> {items.freeShipping === "true" ? '' : (<p>Frete Grátis</p>)}</p> */}
+             </div>
+            {/* <Rating/> */}
+            {/* <h3>{items.colors} cores</h3> */}
+            
 
+           <div className="card-body">
+            <h2>{items.name}</h2>
+              <p className="price">
+               R$ {items.price}
+              </p>
+              <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
+            {/* <Rating/> */}
+              <h3>{items.colors} cores</h3>
            </div>
            </div>
         ))}
       </div>
+
   )
 }
 
