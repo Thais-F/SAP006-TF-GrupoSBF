@@ -1,12 +1,17 @@
 
 import React from 'react';
-import Product from '../../components/product/Product';
+import Promotions from '../../components/banner/Promotions';
+import PromoMobile from '../../components/banner/PromoMobile';
 
 
 const Home = () => {
     return (
         <div>
-        <Product />
+            <div>
+            <PromoMobile/>
+        
+        <Promotions />
+        </div>
         </div>
 
         
