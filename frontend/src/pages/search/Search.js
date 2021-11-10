@@ -7,9 +7,7 @@ import './index.css'
 const Search = () => {
     return (
         <div>
-
-            </div>
-        
+        </div>
     )
 }
 

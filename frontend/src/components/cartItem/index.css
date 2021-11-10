@@ -18,7 +18,7 @@
     display: none;
 }
 
-.card {
+.card-div {
     display: flex;
     justify-content: space-between;
     border: 1px solid #E5E5E5;
@@ -35,13 +35,13 @@
     flex-direction: column;
 }
 
-.img {
+.img-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.card .img img {
+.card-div .img-div img {
     position: static;
     width: 80px;
     height: 80px;
@@ -49,7 +49,7 @@
     top: 28px;
 }
 
-.card h1 {
+.card-div h1 {
     /* position: absolute; */
     width: 200px;
     height: 36px;
@@ -152,7 +152,7 @@
     color: #1A1A1A;
 }
 
-.old-price{
+.old-price-span{
 width: 84px;
 height: 16px;
 font-family: Roboto;
@@ -211,7 +211,7 @@ color: #1A1A1A;
 }
 
 @media(min-width:1024px){
-    .card {
+    .card-div {
         width: 750px;
         align-self: flex-start;
         margin-left: 15px;
@@ -234,11 +234,11 @@ color: #1A1A1A;
         margin-right: 20px;
     }
 
-    .card {
+    .card-div {
         justify-content: flex-start;
     }
 
-    .card h1 {
+    .card-div h1 {
         position: relative;
         left: 11px;
         width: 176px;

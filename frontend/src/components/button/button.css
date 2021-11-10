@@ -14,7 +14,7 @@
     background: #E30000;
     border-radius: 4px;
 }
-
+/* 
 .btn:hover {
     display: flex;
     flex-direction: row;
@@ -43,7 +43,7 @@
     top: calc(50% - 28px/2);
     background: #E30000;
     border-radius: 4px;
-}
+} */
 
 /*.btn:focus { 
     display: flex;
