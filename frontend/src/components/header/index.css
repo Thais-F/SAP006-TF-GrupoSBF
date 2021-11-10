@@ -23,7 +23,7 @@ header{
 .btns-header{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+   width: 70%; 
 }
 .btn-nav, .btn-cart{
     border:none;
