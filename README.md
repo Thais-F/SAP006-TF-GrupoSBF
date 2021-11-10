@@ -32,15 +32,33 @@ Os usuarios podem escolher os produtos, pesquisar o nome do item desejado ou esc
  
 ## 👩‍💻 5.Tecnologias Ultilizadas:
 
-- [Conceitos fundamentais de CSS3](#-css)
-- [HTML5 semântico](#-html)
-- [Mobile first](#-mobile)
-- [Js Node](#-node)
-- [React](#-react)
-- [Figma ](#-figma)
-- [vscode ](#-code)
-- [github ](#-github)
-- [git ](#-git)
+ <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=React.JS&color=blue&style=for-the-badge&logo=Ghost"  alt="React">
+	</a>
+ <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=HTML 5&color=red&style=for-the-badge&logo=Ghost"  alt="HTML5">
+	</a>
+  <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=CSS 3&color=blue&style=for-the-badge&logo=Ghost"  alt="CSS3">
+	</a>
+  <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=JAVASCRIPT&color=yellow&style=for-the-badge&logo=Ghost"  alt="js">
+	</a>
+ <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=Node.js&color=green&style=for-the-badge&logo=Ghost"  alt="node">
+	</a>
+ <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=HEROKU&color=purple&style=for-the-badge&logo=Ghost"  alt="heroku">
+	</a>
+ <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=FIGMA&color=red&style=for-the-badge&logo=Ghost"  alt="heroku">
+	</a>
+ <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=GIT e GitHub&color=black&style=for-the-badge&logo=Ghost"  alt="heroku">
+	</a>
+ <a href="#">
+		<img src="https://img.shields.io/static/v1?label=&message=VS Code &color=bluek&style=for-the-badge&logo=Ghost"  alt="vs-code">
+	</a>
 
 ## :woman: 6.Desenvolvido por:
 - [Guiliana Thamiê](#-Gui)
