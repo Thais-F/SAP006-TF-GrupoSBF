@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { IoMdCart } from 'react-icons/io'
 import logo from '../../assets/images/centauro.png';
 import Input from '../inputSearch/InputSearch';
