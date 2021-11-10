@@ -45,6 +45,7 @@ Os usuarios podem escolher os produtos, pesquisar o nome do item desejado ou esc
 ## :woman: 6.Desenvolvido por:
 - [Guiliana Thamiê](#-Gui)
 - [Lediane Machado](#-ledi)
+- [Mariana Rocha](#-mari)
 - [Thais Fernandes](#-thais)
 - [Thalita Machado](#-tha)
 - [Thalita Neves](#-thali)
