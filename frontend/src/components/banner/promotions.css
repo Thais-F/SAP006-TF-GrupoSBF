@@ -8,7 +8,7 @@ flex-direction: column;
 align-items: center;
 padding: 16px;
 position: relative;
-width: 170px;
+width: 208px;
 height: 362px;
 background: #FFFFFF;
 border: 1px solid #D6D6D6;
@@ -42,8 +42,22 @@ border-radius: 4px
   height: 100%;
 }
 
+/* .promcard {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  padding: 16px;
+  position: relative;
+  width: 170px;
+  height: 362px;
+  background: #FFFFFF;
+  border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  border-radius: 4px 
+  } */
+
 .promcard {
-  margin-left: 0px;
+  margin-left: 70px;
 }
 
 .promodesk {
@@ -56,7 +70,7 @@ border-radius: 4px
     display: grid;
     align-items: center;
     gap: 5px 5px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 
