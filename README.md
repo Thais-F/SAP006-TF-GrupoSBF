@@ -8,7 +8,7 @@
 - [Autoras](#-desenvolvido)
 
 ## 1. Introdução
-O projeto Mini e-commerce foi idealizdo para o Hackton Talent Fast junto com o Grupo SBF e Laboratória.
+O projeto Mini e-commerce foi idealizdo para o Hackton Talent Fest junto com o Grupo SBF e Laboratória.
 Desenvolvido com intuíto de possibilitar ao usuario uma experiência de compra na aplicação.
 
 ## 2. Resumo do projeto
