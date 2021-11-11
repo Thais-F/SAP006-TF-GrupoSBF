@@ -9,18 +9,18 @@
 
 ## 1. Introdução
 O projeto Mini e-commerce foi idealizdo para o Hackton Talent Fast junto com o Grupo SBF e Laboratória.
-O objetivo desse projeto foi desenvolver um SPA que  permita ao usuario visualizar, e interagir com a pagina.
+Desenvolvido com intuíto de possibilitar ao usuario uma experiência de compra na aplicação.
 
 ## 2. Resumo do projeto
 O objetivo desse projeto foi desenvolver um SPA que permita visualizar e interagir a partir das funcionalidades que estejam de acordo com a necessidade do usuário. O projeto proposto pelo Grupo SBF foi realizado em grupo.
 
-A Centauro agora faz parte do Grupo SBF e para uma melhor experiência de navegação dos usuários em nosso site foi identificado alguns pontos de melhorias nas páginas home, busca e carrinho. Dessa forma a pagina pode se tornar mais atrativa para os clientes.
+A Centauro agora faz parte do Grupo SBF e para uma melhor experiência de navegação dos usuários em nosso site, foi identificado alguns pontos de melhorias nas páginas home, busca e carrinho. Dessa forma a pagina pode se tornar mais atrativa  e funcional para os clientes.
 
 ## 3.Funcionalidades
-Os usuarios podem escolher os produtos, pesquisar o nome do item desejado ou escolher por ordenação dos itens podendo ser alterada pelo usúario por relevância,de menor preço, maior preço, maior desconto e adicionar a compra no carrinho de compras e se desejar poderá excluir o item.
+Os usuarios podem escolher os produtos, pesquisando o item desejado por nome e adiciona-los ao carrinho de compras, remover, aumentar e/ou diminuir os itens do carrinho e finalizar a compra.
 
 ## 🎯 4.Protótipo 
-- Feito no Figma pelos Designs do Grupo SBF
+- Figma disponibilizado pela equipe de Designs do Grupo SBF
 
 <a href="https://imgbox.com/KhVmMDwk" target="_blank"><img src="https://thumbs2.imgbox.com/00/c4/KhVmMDwk_t.jpg" alt="image host"/></a>
 
@@ -53,11 +53,28 @@ Os usuarios podem escolher os produtos, pesquisar o nome do item desejado ou esc
 	</a>
 
 ## :woman: 6.Desenvolvido por:
-- [Guiliana Thamiê](#-Gui)
-- [Lediane Machado](#-ledi)
-- [Liziane Garcia](#-ledi)
-- [Mariana Rocha](#-mari)
-- [Thais Fernandes](#-thais)
-- [Thalita Machado](#-tha)
-- [Thalita Neves](#-thali)
+
+### Giuliana Thamiê :woman_artist:
+[@Giuthamie](https://github.com/Giuthamie)  [Linkedin](https://www.linkedin.com/in/giuliana-thami%C3%AA/)
+
+### Lediane Machado :woman_artist:
+[@ledi-mach](https://github.com/ledi-mach)  [Linkedin](https://www.linkedin.com/in/ledianemachado/)
+
+### Liziane Garcia :woman_artist:
+[@lizianegarcia](https://github.com/lizianegarcia)  [Linkedin](https://www.linkedin.com/in/liziane-garcia-da-rosa-44ba8832/)
+
+### Mariana Rocha :woman_artist:
+[@marirr86](https://github.com/marirr86)  [Linkedin](https://www.linkedin.com/in/mariana-r-rocha/)
+
+### Thais Fernandes :woman_artist:
+[@Thais-F](https://github.com/Thais-F)  [Linkedin](https://www.linkedin.com/in/thaisfernandesjulio/)
+
+### Thalita Machado :woman_artist:
+[@Thalita1044](https://github.com/Thalita1044)  [Linkedin](https://www.linkedin.com/in/thalita-machado5/)
+
+### Thalita Neves :woman_artist:
+[@ThalitaNeves95](https://github.com/ThalitaNeves95)  [Linkedin](https://www.linkedin.com/in/thalitanevesdesouza/)
+
+
+---
 
