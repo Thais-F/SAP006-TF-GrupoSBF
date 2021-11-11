@@ -22,13 +22,13 @@ Os usuarios podem escolher os produtos, pesquisando o item desejado por nome e a
 ## 🎯 4.Protótipo 
 - Figma disponibilizado pela equipe de Designs do Grupo SBF
 
-<a href="https://imgbox.com/KhVmMDwk" target="_blank"><img src="https://thumbs2.imgbox.com/00/c4/KhVmMDwk_t.jpg" alt="image host"/></a>
+<a align="center" href="https://ik.imagekit.io/ThalitaNeves95/home_uoJkBADQ4.gif?updatedAt=1636631974947"/></a>
 
-<a href="https://imgbox.com/QAcBSMr2" target="_blank"><img src="https://thumbs2.imgbox.com/1a/ac/QAcBSMr2_t.jpg" alt="image host"/></a>
+<a href="https://ik.imagekit.io/ThalitaNeves95/search_Oa55EQP5tKJ.gif?updatedAt=1636631973737"/></a>
 
- <a href="https://imgbox.com/EER8bCvK" target="_blank"><img src="https://thumbs2.imgbox.com/33/7a/EER8bCvK_t.jpg" alt="image host"/></a>
+ <a href="https://ik.imagekit.io/ThalitaNeves95/carrinho_de_compras_r38-ILlFB.gif?updatedAt=1636631964451"/></a>
  
- <a href="https://imgbox.com/oLcS68Y5" target="_blank"><img src="https://thumbs2.imgbox.com/06/68/oLcS68Y5_t.jpg" alt="image host"/></a>
+ <a href="https://ik.imagekit.io/ThalitaNeves95/carrinho_vazio_N1FFElGKxhT.gif?updatedAt=1636631957304" alt="image host"/></a>
  
 ## 👩‍💻 5.Tecnologias Ultilizadas:
 
