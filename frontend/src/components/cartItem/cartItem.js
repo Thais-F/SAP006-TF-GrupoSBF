@@ -77,7 +77,6 @@ const CartItem = () => {
 
     async function purchase(e){
         e.preventDefault();
-        console.log(products)
         const items = products.map((item) => {
             return {
               "id": item.id,

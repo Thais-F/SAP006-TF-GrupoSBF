@@ -3,6 +3,10 @@
     flex-direction: column;
 }    
 
+.main-content{
+    padding-top:140px;
+}
+
 .cartItems h1 {
     font-family: Roboto;
     font-weight: 400;

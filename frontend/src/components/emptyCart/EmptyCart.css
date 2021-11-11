@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-.principal-container {
+.init {
     display: flex;
     justify-content: space-between;
     height: 296px;
     width: 629px;
     border-radius: 4px;
     border: 1px solid #E5E5E5;
-    margin-left: 30%;
+    margin-left: 26%;
     margin-right: 50%;
     padding: 14px;
+    padding-top:150px;
 }
 
-.secundary-container {
+.sec {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -73,29 +74,26 @@
     margin: 5%;
 }
 
-@media screen and (max-width: 768px) {
-    .principal-container {
+@media (min-width:360px) and (max-width:400px){
+    .init {
         display: flex;
-        flex-direction: column;
-        height: 404px;
-        width: 268px;
+        justify-content: space-between;
+        height: 296px;
+        width: 340px;
+        border-radius: 4px;
+        border: 1px solid #E5E5E5;
+        margin-left: -20px;
+        padding: 14px;
+        padding-top:150px;
     }
-    .cart-img {
-        left: 33px;
-    }
-}
 
-@media screen and (max-width: 767px) {
-    .principal-container {
-        display: flex;
-        flex-direction: column;
-        height: 404px;
-        width: 268px;
-    }
-    .title {
-        margin: 20px;
-    }
     .cart-img {
-        left: 33px;
+        display: flex;
+        height: 120px;
+        width: 140px;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+        left: 20px;
     }
 }

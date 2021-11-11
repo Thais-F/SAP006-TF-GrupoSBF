@@ -21,10 +21,23 @@ export const getProducts = async() => {
       },
   };
 
-  const response = await fetch("http://localhost:3000/search?q=Tênis&sort=relevance", myInit);
+const localInputSearch = localStorage.getItem('searchValue')
 
+if(localInputSearch === ''){
+  const response = await fetch("http://localhost:3000/search?q=Tênis&sort=relevance", myInit);
   const data = await response.json();
   return data
+} else {
+  const response = await fetch(`http://localhost:3000/search?q=${localInputSearch}&sort=relevance`, myInit);
+  const data = await response.json();
+  return data
+}
+
+  //const response = await fetch("http://localhost:3000/search?q=Tênis&sort=relevance", myInit);
+
+
+ // const data = await response.json();
+  //return data
 };
 
 export const postOrder = async(reqBody) => {
