@@ -2,17 +2,20 @@
 import React from 'react';
 import Promotions from '../../components/banner/Promotions';
 import PromoMobile from '../../components/banner/PromoMobile';
+import PromoDesktop from '../../components/banner/PromoDesktop';
 import './home.css';
 
 
 const Home = () => {
     return (
         <div>
-        <h1 className="titulo"> Promoções em destaque </h1>
+           <PromoMobile />
+            <PromoDesktop/>
 
+        <p className="titulo"> Promoções em destaque </p>
         <div className="home">
         <div>
-        <PromoMobile/>
+        
         <Promotions />
         </div>
         </div>

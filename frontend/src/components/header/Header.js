@@ -43,7 +43,7 @@ const Header = () => {
                         id='teste'
                         className='inputSearch'
                         name='inputHeader'
-                        placeholder='Busque por produtos, esportes, marcas ou times'
+                        placeholder='Buscar por produtos'
                     // value={text === null ? null :text}
                     />
                     <button className='searchIcon'

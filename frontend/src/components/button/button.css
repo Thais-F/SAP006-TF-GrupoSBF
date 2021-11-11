@@ -1,21 +1,33 @@
-.btn {
-    height: 28px;
-    width: 112px;
-    padding: 1px, 24px, 1px, 24px;
-
-}
-
-.btn:default {
+.button {
+    color: #ffffff;
+    margin-top: 4px;
+    /* padding-top: 20px; */
+    min-height: 25px;
+    min-width: 176px;
+    /* padding: 1px, 24px, 1px, 24px; */
+    background: #E30000;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1px 24px;
     position: relative;
-    background: #E30000;
     border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+
+
 }
-/* 
-.btn:hover {
+
+/* .button:default {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 24px;
+    position: relative;
+    border-radius: 4px;
+} */
+
+.button:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,15 +37,15 @@
     border-radius: 4px;
 }
 
-.btn:disabled {
+/* .btn:disabled {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 1px 24px;
     position: relative;
-}
+} */
 
-.btn:focus { 
+.button:focus { 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,7 +55,7 @@
     top: calc(50% - 28px/2);
     background: #E30000;
     border-radius: 4px;
-} */
+}
 
 /*.btn:focus { 
     display: flex;

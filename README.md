@@ -44,15 +44,7 @@ Os usuarios podem escolher os produtos, pesquisar o nome do item desejado ou esc
   <a href="#">
 		<img src="https://img.shields.io/static/v1?label=&message=JAVASCRIPT&color=yellow&style=for-the-badge&logo=Ghost"  alt="js">
 	</a>
- <a href="#">
-		<img src="https://img.shields.io/static/v1?label=&message=Node.js&color=green&style=for-the-badge&logo=Ghost"  alt="node">
-	</a>
- <a href="#">
-		<img src="https://img.shields.io/static/v1?label=&message=HEROKU&color=purple&style=for-the-badge&logo=Ghost"  alt="heroku">
-	</a>
- <a href="#">
-		<img src="https://img.shields.io/static/v1?label=&message=FIGMA&color=red&style=for-the-badge&logo=Ghost"  alt="heroku">
-	</a>
+
  <a href="#">
 		<img src="https://img.shields.io/static/v1?label=&message=GIT e GitHub&color=black&style=for-the-badge&logo=Ghost"  alt="heroku">
 	</a>

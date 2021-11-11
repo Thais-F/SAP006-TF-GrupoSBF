@@ -4,6 +4,7 @@
     height: 38px;
     border-radius: 4px;
     text-transform: lowercase;
+    color:#4D4D4D;;
     padding-left: 2%;
     border:none;
     font-size: 16px;
@@ -14,10 +15,9 @@
 @media (min-width:360px) and (max-width:400px){
 
 .inputSearch{
-    width:350px;
+    width:335px;
     border-radius: 0;
     margin-top: 8px;
-
+    margin-left: -10px;
 }
-
 }
