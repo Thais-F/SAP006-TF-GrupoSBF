@@ -28,7 +28,8 @@ const Search = () => {
 
     return (
         <div>
-<div className="grid-container">
+            <Product />
+{/* <div className="grid-container">
             {products.map((item) => (
                 <ul >
                     <li key={item.id} className="card">
@@ -43,11 +44,11 @@ const Search = () => {
                                 R$ {item.price}
                             </div>
                             {/* <Rating/> */ }
-                            <h3>{item.colors} cores</h3>
+                            {/* <h3>{item.colors} cores</h3>
                         </div>
                     </li>
                 </ul>
-            ))}</div>
+            ))}</div> */} 
 
         </div>
     )

@@ -39,16 +39,10 @@ color: #1A1A1A;
   grid-template-columns: repeat(1, 1fr);
 }
 
-/* .left {
-  display: flex;
-  align-items: left;
-  width: 100px;
-height: 10px;
-} */
 
 .titulo {
 display: flex;
-align-items: left;
+/* align-items: left; */
 width: 220px;
 height: 30px;
 margin-left: 90px;

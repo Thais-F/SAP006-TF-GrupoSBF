@@ -44,7 +44,7 @@ const Product = () => {
               <img className="pic" src={items.image} alt={items.name}/>
               </div>
               <div>
-             <p className="shipping"> {items.freeShipping === "true" ? '' : (<p>Frete Grátis</p>)}</p>
+             <p className="shipping"> {items.freeShipping === "true" ? '' : (<p className='frete'>Frete Grátis</p>)}</p>
              </div>
             <h2 className="itemname">{items.name}</h2>
               <p className="price">
@@ -53,10 +53,11 @@ const Product = () => {
               <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
             <Rating items={items}/>
               <h3>{items.colors} cores</h3>
-              <Button className='btn'
+              <Button 
               id={items.id}
               onClick={(event) => adcCarrinho(event)} 
-            />
+            > Adicionar ao Carrinho
+              </Button>
            </div>
         ))}
        

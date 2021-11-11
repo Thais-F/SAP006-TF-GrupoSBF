@@ -3,8 +3,8 @@ import './button.css';
 
 const Button = (props) => {
   return (
-    <button onClick={props.onClick} id={props.id} className={['btn', props.className].join(' ')}>
-      
+    <button onClick={props.onClick} id={props.id} className={['button', props.className].join(' ')}>
+      {props.children}
     </button>
   ) 
   
