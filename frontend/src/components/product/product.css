@@ -6,10 +6,10 @@
   border: 0;
 }
 
-.grid-container {
+.gridcontainer {
   margin-left: 216px;
   margin-right: 222px;
-  padding-top: 88px;
+  padding-top: 200px; 
   display: grid;
   gap: 32px 32px;
   grid-template-columns: repeat(4, 1fr);
@@ -38,7 +38,7 @@ h3{
   font-weight: 400;
   color: #1A1A1A;
 display: flex;
-margin-top: 20px;
+margin-top: 4px;
 margin-left: -125px;
 flex-direction: row;
 align-items: center;
@@ -110,7 +110,7 @@ color: #FFFFFF;
 
 .price { 
 width: 100px;
-height: 26px;
+height: 24px;
 left: 0px;
 margin-top: 0px;
 top: 0px;
@@ -120,7 +120,7 @@ top: 0px;
   font-size: 18px;
   margin-left: -80px;
   top: 0px;
-  margin-top: 8px;
+  margin-top: 2px;
   /* line-height: 26px; */
   color: #1A1A1A;
 }
@@ -140,7 +140,7 @@ color: #4D4D4D;
 }
 /* Rating */
 .rate {
-  margin-top: 15px;
+  margin-top: 6px;
   margin-right: 30px;
   width: 150px;
 }
@@ -161,7 +161,7 @@ color: #4D4D4D;
 
 
 @media screen and (max-width:360px){
-  .grid-container {
+  .gridcontainer {
     margin-left: 6px;
     padding-top: 88px;
     display: grid;

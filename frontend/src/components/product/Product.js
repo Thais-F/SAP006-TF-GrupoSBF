@@ -36,7 +36,7 @@ const Product = () => {
     
   return (
 
-      <div className="grid-container">
+      <div className="gridcontainer">
           {products.map((items) => (
             <div key={items.id} className="card">
               <div>
@@ -53,12 +53,13 @@ const Product = () => {
               <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
             <Rating items={items}/>
               <h3>{items.colors} cores</h3>
-              <Button
+              <Button className='btn'
               id={items.id}
               onClick={(event) => adcCarrinho(event)} 
             />
            </div>
         ))}
+       
       </div>
 
   )

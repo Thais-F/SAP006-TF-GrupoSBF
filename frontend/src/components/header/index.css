@@ -97,7 +97,6 @@ body{
     margin:0;
     padding:0;
 }
-
 header{
     padding:0;
     margin: 0;
@@ -117,7 +116,6 @@ header{
     border-bottom: 1px solid lightgray;
     padding: 9px;
 }
-
 .btns-header{
     display: flex;
     justify-content: space-between;
@@ -143,7 +141,6 @@ header{
     color:#ffffff;
     font-size: 30px;
 }
-
 #outlet{
     color:#E30000;
     font-weight: bold;
@@ -158,13 +155,11 @@ header{
     display: grid;
     place-items: center;
 }
-
 .searchInputs{
     width: 55vw;
     display: flex;
     }
     
-
 @media screen and (max-width:768px){
     .secondary{
         display:none;
