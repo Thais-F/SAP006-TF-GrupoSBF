@@ -24,7 +24,7 @@ Os usuários podem escolher os produtos, pesquisando o item desejado por nome e 
 
 ## 🎯 4.Protótipo 
 
-- Figma disponibilizado pela equipe de Designs do Grupo SBF
+- Figma disponibilizado pela equipe de Designers do Grupo SBF
 
 
 <img align="center" src="https://ik.imagekit.io/ThalitaNeves95/home_uoJkBADQ4.gif?updatedAt=1636631974947" alt="Sublime's custom image"/> <img align="center" src="https://ik.imagekit.io/ThalitaNeves95/search_Oa55EQP5tKJ.gif?updatedAt=1636631973737" alt="Sublime's custom image"/> 
