@@ -22,11 +22,9 @@ Os usuarios podem escolher os produtos, pesquisando o item desejado por nome e a
 ## 🎯 4.Protótipo 
 - Figma disponibilizado pela equipe de Designs do Grupo SBF
 
-<a align="center" href="https://ik.imagekit.io/ThalitaNeves95/home_uoJkBADQ4.gif?updatedAt=1636631974947"/></a>
-
-<a href="https://ik.imagekit.io/ThalitaNeves95/search_Oa55EQP5tKJ.gif?updatedAt=1636631973737"/></a>
-
- <a href="https://ik.imagekit.io/ThalitaNeves95/carrinho_de_compras_r38-ILlFB.gif?updatedAt=1636631964451"/></a>
+<p align="center">
+  <img src="https://ik.imagekit.io/ThalitaNeves95/home_uoJkBADQ4.gif?updatedAt=1636631974947" alt="Sublime's custom image"/>
+</p>
  
  <a href="https://ik.imagekit.io/ThalitaNeves95/carrinho_vazio_N1FFElGKxhT.gif?updatedAt=1636631957304" alt="image host"/></a>
  
