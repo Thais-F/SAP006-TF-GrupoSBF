@@ -10,17 +10,17 @@
 ## 1. Introdução
 
 O projeto Mini e-commerce foi idealizado para o Hackton Talent Fest junto com o Grupo SBF e Laboratória.
-Desenvolvido com intuíto de simular um fluxo de compra. 
+Desenvolvido com intuito de simular um fluxo de compra. 
 
 ## 2. Resumo do projeto
 
 O objetivo desse projeto foi desenvolver um SPA que permita visualizar e interagir a partir das funcionalidades que estejam de acordo com a necessidade do usuário. O projeto proposto pelo Grupo SBF foi realizado em grupo.
 
-A Centauro agora faz parte do Grupo SBF e para uma melhor experiência de navegação dos usuários em nosso site, foi identificado alguns pontos de melhorias nas páginas home, busca e carrinho. Dessa forma a pagina pode se tornar mais atrativa  e funcional para os clientes.
+A Centauro agora faz parte do Grupo SBF e para uma melhor experiência de navegação dos usuários em nosso site, foi identificado alguns pontos de melhoria nas páginas home, busca e carrinho. Dessa forma a página pode se tornar mais atrativa  e funcional para os clientes.
 
 ## 3.Funcionalidades
 
-Os usuarios podem escolher os produtos, pesquisando o item desejado por nome e adiciona-los ao carrinho de compras, remover, aumentar e/ou diminuir os itens do carrinho e finalizar a compra.
+Os usuários podem escolher os produtos, pesquisando o item desejado por nome e adicioná-los ao carrinho de compras, remover, aumentar e/ou diminuir os itens do carrinho e finalizar a compra.
 
 ## 🎯 4.Protótipo 
 
