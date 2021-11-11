@@ -9,7 +9,7 @@
 
 ## 1. Introdução
 O projeto Mini e-commerce foi idealizdo para o Hackton Talent Fest junto com o Grupo SBF e Laboratória.
-Desenvolvido com intuíto de possibilitar ao usuario uma experiência de compra na aplicação.
+Desenvolvido com intuito de possibilitar ao usuario uma experiência de compra na aplicação.
 
 ## 2. Resumo do projeto
 O objetivo desse projeto foi desenvolver um SPA que permita visualizar e interagir a partir das funcionalidades que estejam de acordo com a necessidade do usuário. O projeto proposto pelo Grupo SBF foi realizado em grupo.
