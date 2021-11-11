@@ -4,7 +4,7 @@
 }    
 
 .cartItems h1 {
-    font-family: Roboto; /* importarrrrrrrrrrrrr */
+    font-family: Roboto;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
@@ -210,11 +210,121 @@ color: #1A1A1A;
     cursor: pointer;
 }
 
+.orderMenu {
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    padding: 10px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.orderMenu h1 {
+    width: 151px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+    align-self: center;
+}
+
+.orderMenu hr {
+    border-top: 1px solid black;
+    width: 20px;
+    padding: 10px;
+    align-self: center;
+}
+
+.info-orderMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+#info-orderMenu {
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    padding:10px;
+}
+
+.btn-order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 24px;
+    width: 176px;
+    height: 48px;
+    background: #E30000;
+    border-radius: 4px;
+    margin-bottom: 9px;
+    align-self: center;
+}
+
+.btn-order p {
+    height: 26px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+/* Neutral / White */
+    color: #FFFFFF;
+}
+
+.btn-order:hover{
+    cursor: pointer;
+}
+
+.info-orderMenu-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* Neutral / Black */
+    color: #1A1A1A;
+}
+
+.info-orderMenu-values{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1A1A1A;
+}
+
+.info-total {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    /* Neutral / Black */
+    color: #1A1A1A;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
 @media(min-width:1024px){
     .card-div {
-        width: 750px;
+        width: 728px;
         align-self: flex-start;
-        margin-left: 15px;
+        margin-left: 8px;
     }
 
     .info{
@@ -224,10 +334,9 @@ color: #1A1A1A;
 
     .tittles {
         display: flex;
-        /* margin-left: 35px; */
-        margin-left:10px;
-        margin-top: 20px;
-        /* justify-content: flex-start; */
+        margin-left:5px;
+        margin-top: 35px;
+        margin-bottom: 15px;
     }
 
     .tittles h1 {
@@ -324,6 +433,17 @@ color: #1A1A1A;
 
     .buttons {
         margin-bottom: 0;
+    }
+
+    .orderMenu {
+        align-self: flex-start;
+        position: relative;
+        left: 11px;
+        top:52px;
+    }
+
+    .main-content {
+        flex-direction: row;
     }
 }
 

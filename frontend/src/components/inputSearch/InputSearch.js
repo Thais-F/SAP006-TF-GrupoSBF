@@ -21,3 +21,4 @@ function Input({ placeholder, name, className, value, onChange }) {
 }
 
 export default Input; 
+

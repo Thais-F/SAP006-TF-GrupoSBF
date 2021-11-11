@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { IoMdCart } from 'react-icons/io'
+import React from 'react';
+import { IoMdCart } from 'react-icons/io';
+import { FaSearch } from 'react-icons/fa';
 import logo from '../../assets/images/centauro.png';
 import Input from '../inputSearch/InputSearch';
 import { useNavigate } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs';
-// import Product from '../product/Product';
 import './header.css';
 
 const Header = () => {
@@ -22,7 +22,6 @@ const Header = () => {
         navigate('/')
     }
 
-
     return (
         <header className="header">
             <div className="principal">
@@ -31,6 +30,11 @@ const Header = () => {
                     <img src={logo} className='logo-img' alt='logo'
                         onClick={navigateHome}
                     />
+                </button>
+
+                <button type='button' className='btn2-cart'
+                    onClick={handleCart}
+                >< IoMdCart />
                 </button>
 
                 <div className='searchInputs'>
@@ -44,11 +48,8 @@ const Header = () => {
                     />
                     <button className='searchIcon'
                         onClick={handleClick}
-                    ><BsSearch /></button>
+                    ><FaSearch /></button>
                 </div>
-
-
-
 
                 <button type='button' className='btn-cart'
                     onClick={handleCart}
