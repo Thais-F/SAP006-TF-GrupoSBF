@@ -10,7 +10,7 @@
 ## 1. Introdução
 
 O projeto Mini e-commerce foi idealizado para o Hackton Talent Fest junto com o Grupo SBF e Laboratória.
-Desenvolvido com intuíto de criar simular um fluxo de compra. 
+Desenvolvido com intuíto de simular um fluxo de compra. 
 
 ## 2. Resumo do projeto
 
