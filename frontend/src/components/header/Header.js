@@ -4,16 +4,15 @@ import { FaSearch } from 'react-icons/fa';
 import logo from '../../assets/images/centauro.png';
 import Input from '../inputSearch/InputSearch';
 import { useNavigate } from 'react-router-dom';
-import { BsSearch } from 'react-icons/bs';
 import './header.css';
 
 const Header = () => {
+    let navigate = useNavigate();
 
     function handleClick() {
         navigate('/busca')
     }
 
-    let navigate = useNavigate();
     function handleCart() {
         navigate('/carrinho')
     }
@@ -44,8 +43,8 @@ const Header = () => {
                         className='inputSearch'
                         name='inputHeader'
                         placeholder='Buscar por produtos'
-                    // value={text === null ? null :text}
                     />
+
                     <button className='searchIcon'
                         onClick={handleClick}
                     ><FaSearch /></button>

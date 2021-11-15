@@ -11,58 +11,53 @@ const Product = () => {
   const adcCarrinho = (event) => {
     const newProduct = products.filter((item) => item.id === event.target.id)
     newProduct[0].quantity = 1
-    console.log(newProduct)
     const carrinho = JSON.parse(localStorage.getItem('produtosDoCarrinho'))
 
-    if(carrinho === null) {
+    if (carrinho === null) {
       localStorage.setItem('produtosDoCarrinho', JSON.stringify(newProduct))
     } else {
       const carrinhoAtualizado = [...carrinho, newProduct[0]]
       localStorage.removeItem('produtosDoCarrinho')
       localStorage.setItem('produtosDoCarrinho', JSON.stringify(carrinhoAtualizado))
-
     }
-    console.log(JSON.parse(localStorage.getItem('produtosDoCarrinho')))    
   }
 
   useEffect(() => {
-      async function getPromos() {
-          const product = await getProducts()
-          setProducts(product)
-          return product
-      }
-      getPromos()        
-    }, []);
-    
+    async function getPromos() {
+      const product = await getProducts()
+      setProducts(product)
+      return product
+    }
+    getPromos()
+  }, []);
+
   return (
 
-      <div className="gridcontainer">
-          {products.map((items) => (
-            <div key={items.id} className="card">
-              <div>
-               {items.discount === "null" ? '' : <p className="discount"> {items.discount}%</p>}
-              <img className="pic" src={items.image} alt={items.name}/>
-              </div>
-              <div>
-             <p className="shipping"> {items.freeShipping === "true" ? '' : (<p className='frete'>Frete Grátis</p>)}</p>
-             </div>
-            <h2 className="itemname">{items.name}</h2>
-              <p className="price">
-               R$ {items.price}
-              </p>
-              <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
-            <Rating items={items}/>
-              <h3>{items.colors} cores</h3>
-              <Button 
-              id={items.id}
-              onClick={(event) => adcCarrinho(event)} 
-            > Adicionar ao Carrinho
-              </Button>
-           </div>
-        ))}
-       
-      </div>
-
+    <div className="gridcontainer">
+      {products.map((items) => (
+        <div key={items.id} className="card">
+          <div>
+            {items.discount === "null" ? '' : <p className="discount"> {items.discount}%</p>}
+            <img className="pic" src={items.image} alt={items.name} />
+          </div>
+          <div>
+            <p className="shipping"> {items.freeShipping === "true" ? '' : (<p className='frete'>Frete Grátis</p>)}</p>
+          </div>
+          <h2 className="itemname">{items.name}</h2>
+          <p className="price">
+            R$ {items.price}
+          </p>
+          <p className="old-price"> {items.oldPrice === "null" ? '' : items.oldPrice}</p>
+          <Rating items={items} />
+          <h3>{items.colors} cores</h3>
+          <Button
+            id={items.id}
+            onClick={(event) => adcCarrinho(event)}
+          > Adicionar ao Carrinho
+          </Button>
+        </div>
+      ))}
+    </div>
   )
 }
 
