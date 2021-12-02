@@ -1,0 +1,5 @@
+.wrapper{
+    background-color: blueviolet;
+    position: fixed;
+    z-index: 6;
+}
